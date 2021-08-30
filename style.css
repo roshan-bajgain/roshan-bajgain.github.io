@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(background.png), #fff;
+  background: #e5e5e5;
   background-size: cover;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -22,6 +22,10 @@ body {
 .menu {
   height: 13px;
   margin-top: 5px;
+}
+
+.menu-items {
+  display: none;
 }
 
 a {
@@ -51,23 +55,23 @@ a {
 }
 
 .para1 {
-  font-size: 18px;
-  color: #797f8a;
+  color: #344563;
   margin-left: 16px;
-  margin-top: 10px;
+  margin-top: -2px;
+  font-size: 16px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #7f8cff;
-  margin-top: 14px;
+  margin-top: 19px;
   margin-left: 17px;
 }
 
 .social-icons {
   display: flex;
   list-style-type: none;
-  margin-top: 13px;
+  margin-top: 7px;
   margin-left: 9px;
 }
 
@@ -75,13 +79,21 @@ h2 {
   padding: 10px;
 }
 
+.works-container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .works {
   padding: 18px 20px;
-  margin: 3px 14px;
   margin-top: 125px;
   background: #fff;
   border: 1px solid#b8bfd4;
   border-radius: 15px;
+}
+
+.snapshoot-portfolia {
+  width: 100%;
 }
 
 .heading {
@@ -118,12 +130,13 @@ h5 {
 .content {
   color: #344563;
   margin-top: 13px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn {
   margin-top: 14px;
   display: flex;
+  text-align: center;
 }
 
 .btn1 {
@@ -150,7 +163,7 @@ h5 {
 
 .btn3 {
   border: 1px solid #396df2;
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 18px;
   color: #396df2;
   padding: 15px 12px;
@@ -184,7 +197,7 @@ h5 {
   background: #fff;
   border-radius: 0 54px 0 0;
   margin-top: 110px;
-  padding-bottom: 95px;
+  padding-bottom: 135px;
 }
 
 .list {
@@ -250,15 +263,18 @@ h5 {
   color: #5e6c84;
 }
 
+.fom {
+  text-align: center;
+}
+
 .contact-form {
-  margin-top: 82px;
-  padding: 10px 10px;
   background: url(background-form.png), #6070ff;
   border-radius: 65px 0 0 0;
   font-family: 'Poppins', sans-serif;
   position: relative;
   background-position: right;
   background-repeat: no-repeat;
+  margin-top: -50px;
 }
 
 .contact-heading {
@@ -277,11 +293,7 @@ h5 {
 
 .form {
   margin-top: 27px;
-}
-
-.image-form {
-  background: url(background-form.png);
-  position: absolute;
+  text-align: center;
 }
 
 #name {
@@ -324,17 +336,14 @@ h5 {
 }
 
 .div-button button {
-  display: flex;
-  align-items: center;
-  justify-content: start;
   padding: 15px 30px;
   color: #6070ff;
-  margin: 10px 10px 0 19px;
   font-size: 20px;
   border-radius: 11px;
   border: 1px solid #cfd8dc;
   font-weight: 500;
   cursor: pointer;
+  text-align: center;
 }
 
 .shape {
@@ -360,4 +369,99 @@ h5 {
   background: #2230d2;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (min-device-width: 995px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-items {
+    display: block;
+    padding-right: 104px;
+  }
+
+  .nav1 {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav1 li {
+    padding: 5px 12px;
+    color: #344563;
+    font-size: 12px;
+  }
+
+  .landing-section {
+    background: url(./Image/Headerbg.png), #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 96px;
+    padding-left: 47px;
+    padding-right: 120px;
+  }
+
+  .content1 {
+    padding: 38px 81px;
+  }
+
+  .navbar a {
+    font-size: 15px;
+    padding: 10px 55px;
+  }
+
+  .works {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  .snapshoot-portfolia {
+    width: 90%;
+  }
+
+  .works-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .content2 {
+    width: 55%;
+    flex: 1;
+  }
+
+  .snapp {
+    flex: 1;
+  }
+
+  .works-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .Myself {
+    display: flex;
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .fom {
+    align-items: center;
+    width: 600px;
+    margin: auto;
+  }
+
+  .contact-form {
+    background: url(Image/contactform-background.png), #6070ff;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .div-button {
+    margin-top: 20px;
+    padding-bottom: 118px;
+  }
 }
