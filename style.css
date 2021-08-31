@@ -372,21 +372,19 @@ h5 {
 }
 
 .icon img {
-animation: rotate360 1.2s linear infinite; 
-animation-play-state: paused;               
+  animation: rotate360 1.2s linear infinite;
+  animation-play-state: paused;
 }
 
 .icon img:hover {
-animation-play-state: running;              
+  animation-play-state: running;
 }
 
-@keyframes rotate360 { 
-
-  to { transform: rotate(120deg);
-   }           
+@keyframes rotate360 {
+  to {
+    transform: rotate(120deg);
+  }
 }
-  
-
 
 @media screen and (min-device-width: 995px) {
   .menu {
