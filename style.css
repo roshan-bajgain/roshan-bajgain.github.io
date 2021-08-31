@@ -31,8 +31,8 @@ body {
 a {
   text-decoration: none;
   color: #6070ff;
-  font-size: 10px;
-  font-size: 24px;
+  font-size: 12px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ a {
 }
 
 .para {
-  font-size: 41px;
+  font-size: 43px;
   font-weight: bold;
   color: #172b4d;
   margin-top: 73px;
@@ -58,11 +58,11 @@ a {
   color: #344563;
   margin-left: 16px;
   margin-top: -2px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
   color: #7f8cff;
   margin-top: 19px;
   margin-left: 17px;
@@ -100,7 +100,7 @@ h2 {
   margin-left: -2px;
   margin-top: 11px;
   color: #172b4d;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ h2 {
 
 h5 {
   color: #344563;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 18px;
 }
 
@@ -124,13 +124,13 @@ h5 {
 
 .det {
   color: #7a869a;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .content {
   color: #344563;
   margin-top: 13px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .btn {
@@ -146,14 +146,14 @@ h5 {
   list-style: none;
   background: #ebebff;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 2px 4px;
 }
 
 .btn2 {
   border: 1px solid #396df2;
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 20px;
   color: #396df2;
   padding: 15px 17px;
   border-radius: 10px;
@@ -164,7 +164,7 @@ h5 {
 .btn3 {
   border: 1px solid #396df2;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 20px;
   color: #396df2;
   padding: 15px 12px;
   border-radius: 10px;
@@ -187,7 +187,7 @@ h5 {
 }
 
 .lang {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .Myself {
@@ -214,7 +214,7 @@ h5 {
 }
 
 .js-task {
-  font-size: 21px;
+  font-size: 23px;
   color: #253858;
   margin-left: 20px;
 }
@@ -278,7 +278,7 @@ h5 {
 }
 
 .contact-heading {
-  font-size: 39px;
+  font-size: 41px;
   text-align: center;
   margin-top: 100px;
   color: #fff;
@@ -326,19 +326,19 @@ h5 {
 .fomm::placeholder {
   color: #172b4d;
   opacity: 1;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .text ::placeholder {
   color: #b3bac5;
   opacity: 0.3;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .div-button button {
   padding: 15px 30px;
   color: #6070ff;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 11px;
   border: 1px solid #cfd8dc;
   font-weight: 500;
@@ -389,7 +389,7 @@ h5 {
   .nav1 li {
     padding: 5px 12px;
     color: #344563;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .landing-section {
@@ -406,7 +406,7 @@ h5 {
   }
 
   .navbar a {
-    font-size: 15px;
+    font-size: 17px;
     padding: 10px 55px;
   }
 
