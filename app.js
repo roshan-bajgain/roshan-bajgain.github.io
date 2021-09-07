@@ -8,10 +8,8 @@ navToggle.addEventListener('click', () => {
 closebtn.addEventListener('click', () => {
   links.classList.remove('show-links');
 });
-console.log(navs);
-navs.forEach(a=> {
-  a.addEventListener('click',()=> {
-    console.log('click')
+navs.forEach((a) => {
+  a.addEventListener('click', () => {
     links.classList.remove('show-links');
-  })
-})
+  });
+});
