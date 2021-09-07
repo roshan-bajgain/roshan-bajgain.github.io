@@ -29,10 +29,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background: yellowgreen;
+  background: rgba(96,112,255,.9);
   width: 100%;
   height: 100vh;
-  z-index: 100;
+  z-index: 50;
 }
 
 .show-links {
@@ -42,6 +42,8 @@ body {
 .close-btn {
   float: right;
   padding: 13px;
+  color: white;
+ 
 }
 
 .nav1 {
@@ -51,10 +53,11 @@ body {
 }
 
 .information {
-  color: #344563;
+  color: #ffff;
   font-size: 17px;
   opacity: 0.8;
   margin-top: 10px;
+  font-size: 32px;
 }
 
 a {
