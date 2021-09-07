@@ -52,7 +52,7 @@ body {
 }
 
 .information {
-  color: black;
+  color: #344563;
   font-size: 17px;
   opacity: 0.8;
   margin-top: 10px;
@@ -445,10 +445,11 @@ h5 {
   .nav1 {
     display: flex;
     list-style: none;
+    padding: 21px;
   }
 
   .nav1 li {
-    padding: 5px 12px;
+    padding: 10px 12px;
     color: #344563;
     font-size: 14px;
   }
