@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EL6J7KW55"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshan Awesome Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EL6J7KW55"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -10,24 +18,17 @@
 
       gtag('config', 'G-3EL6J7KW55');
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roshan Awesome Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
       <a href="#">Roshan Bajgain</a>
       <img class="menu" src="Union.png" alt="Menu">
       <div class="menu-items">
+        <img class="close-btn" src="x.svg" alt="close-botton">
         <ul class="nav1">
-          <li>portfolia</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a class="information" href="#">Portfolio</a></li>
+          <li><a class="information" href="#about-myself">About</a></li>
+          <li><a class="information" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -137,9 +138,9 @@
         </div>  
       </section>
     </div>
-    <section class="Myself">
+    <section id="about-myself" class="Myself">
       <div class="snapp">
-        <h3 class="para">About<br> Myself</h3>
+        <h3 class="para">About<br> Myself </h3>
         <p class="para1">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <h2>LET’S CONNECT</h2>
         <div>
@@ -202,7 +203,7 @@
         </div>
       </div>  
     </section>
-    <section class="contact-form">
+    <section id="contact" class="contact-form">
       <div class="fom">
         <h1 class="contact-heading">Contact me</h1>
         <p class="contact-para">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
@@ -219,5 +220,6 @@
       </div>
       </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
