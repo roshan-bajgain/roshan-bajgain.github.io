@@ -37,7 +37,6 @@ body {
 
 .show-links {
   display: block;
- 
 }
 
 .close-btn {
@@ -423,7 +422,6 @@ h5 {
 
   .show-links {
     display: none;
-   
   }
 
   .menu-items {
@@ -435,7 +433,6 @@ h5 {
     background: none;
     height: 1px;
     z-index: 100;
-   
   }
 
   .close-btn {
