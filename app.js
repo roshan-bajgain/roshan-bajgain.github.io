@@ -29,6 +29,17 @@ const myprojects = [
   },
 ];
 
+const project = document.getElementById('project-1');
+project.addEventListener('click', (e) => {
+  console.log(e.dataset);
+  popUpProject(myprojects[0])
+});
+  const btn = document.querySelectorAll('.project-btn').forEach(function(item) {
+  item.addEventListener('click', function() {
+    console.log(item.innerHTML);
+  });
+  });
+
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
@@ -37,8 +48,8 @@ const popUpProject = (popUpdata) => {
          <div class="work-detail-box">
              <ul>
                  <li class=" work-detail canopy">CANOPY </li>
-                 <li class="work-detail work-text">Back End Dev </li>
-                 <li class="work-detail work-text">2015</li>
+                 <li class="work-detail work-text det">Back End Dev </li>
+                 <li class="work-detail work-text det">2015</li>
              </ul>
          </div>
          <div class="card-image">
@@ -50,9 +61,9 @@ const popUpProject = (popUpdata) => {
          <div>
              <div class="work-detail-box">
                  <ul>
-                     <li class="chips">html</li>
-                     <li class="chips">css</li>
-                     <li class="chips">javascript</li>
+                     <li class="chips btn1">html</li>
+                     <li class="chips btn1">css</li>
+                     <li class="chips btn1">javascript</li>
                  </ul>
              </div>
              <div id="work-buttons">

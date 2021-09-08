@@ -42,11 +42,83 @@ body {
   backdrop-filter: blur(3px);
 }
 
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  font-size: 33px;
+}
+
+#work-popup-section {
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  justify-content: center;
+  position: fixed;
+  padding: 1px 98px;
+  z-index: 100;
+}
+
+#popUp-Close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+
+.card-title {
+  color: #172B4D;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.work-snapshot {
+  margin-top: 15px;
+}
+
+.work-description {
+  margin-top: 8px;
+  text-align: justify;
+}
+
 .close-btn {
   float: right;
   padding: 13px;
   color: white;
   filter: invert(1);
+}
+
+.work-detail-box ul {
+  display: flex;
+  justify-items: flex-start;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#pop-github {
+  width: 15px;
+}
+
+#live {
+  width: 15px;
+}
+
+#work-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.capony {
+  color:  #344563;
+  font-size: 13px;
 }
 
 .nav1 {
