@@ -1,5 +1,6 @@
 const navToggle = document.querySelector('.menu');
 const closebtn = document.querySelector('.close-btn');
+const workPopUpCard = document.getElementById('work-popup-section');
 const links = document.querySelector('.menu-items');
 const navs = document.querySelectorAll('.information');
 navToggle.addEventListener('click', () => {
@@ -39,5 +40,31 @@ const popUpProject = (popUpdata) => {
                  <li class="work-detail work-text">Back End Dev </li>
                  <li class="work-detail work-text">2015</li>
              </ul>
-         </div>`
-}
+         </div>
+         <div class="card-image">
+         <img class="work-snapshot" src=${popUpdata.imgUrl}
+             alt="snapshot">
+     </div>
+     <div class="work">
+         <p class="work-description">${popUpdata.detailDescription}</p>
+         <div>
+             <div class="work-detail-box">
+                 <ul>
+                     <li class="chips">html</li>
+                     <li class="chips">css</li>
+                     <li class="chips">javascript</li>
+                 </ul>
+             </div>
+             <div id="work-buttons">
+             <div class="work-button"><a class="project-button" href=${popUpdata.liveDemoLink}>See Live <img
+                 src="live1.png" alt="live" id="live"></a>
+             </div>
+             <div class="work-button"><a class="project-button" href=${popUpdata.github}>See Source <img
+                         src="github.png" alt="github" id="pop-github"></a></div>
+         </div>
+     </div>
+ </div>
+</div>
+</div>`;
+workPopUpCard.innerHTML = popUpItem;
+};
