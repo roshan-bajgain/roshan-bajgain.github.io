@@ -59,12 +59,15 @@ const popUpProject = (popUpdata) => {
              <div class="work-button"><a class="project-button" href=${popUpdata.liveDemoLink}>See Live <img
                  src="live1.png" alt="live" id="live"></a>
              </div>
-             <div class="work-button"><a class="project-button" href=${popUpdata.github}>See Source <img
-                         src="github.png" alt="github" id="pop-github"></a></div>
+             <div class="work-button"><a class="project-button" href=${popUpdata.github}>See Source <img src="github.png" alt="github" id="pop-github"></a></div>
          </div>
      </div>
  </div>
 </div>
 </div>`;
 workPopUpCard.innerHTML = popUpItem;
+};
+const popupClose = () => {
+  const popUpProject = document.getElementById('popUp-view');
+  popUpProject.style.visibility = 'hidden';
 };
