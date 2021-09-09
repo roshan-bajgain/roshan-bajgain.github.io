@@ -29,15 +29,12 @@ const myprojects = [
   },
 ];
 
-const project = document.getElementById('project-1');
-project.addEventListener('click', (e) => {
-  console.log(e.dataset);
-  popUpProject(myprojects[0])
-});
   const btn = document.querySelectorAll('.project-btn').forEach(function(item) {
   item.addEventListener('click', function() {
-    console.log(item.innerHTML);
-  });
+      console.log(item.dataset);
+      const project_id = 0;
+      workPopUpCard.classList.add('open');
+    });
   });
 
 const popUpProject = (popUpdata) => {
@@ -79,6 +76,5 @@ const popUpProject = (popUpdata) => {
 workPopUpCard.innerHTML = popUpItem;
 };
 const popupClose = () => {
-  const popUpProject = document.getElementById('popUp-view');
-  popUpProject.style.visibility = 'hidden';
+  workPopUpCard.classList.remove('open');
 };

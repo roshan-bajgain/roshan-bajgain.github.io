@@ -62,6 +62,23 @@ body {
   position: fixed;
   padding: 1px 98px;
   z-index: 100;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.open {
+  display: block;
+}
+
+#popUp-card {
+  padding: 12px 24px;
+}
+
+#popUp-view {
+  width: 100%;
 }
 
 #popUp-Close {
