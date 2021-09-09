@@ -16,26 +16,38 @@ navs.forEach((a) => {
 });
 const myprojects = [
   {
-    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://github.com/roshan-bajgain', liveDemoLink: 'https://roshan-bajgain.github.io/', imgUrl: 'Image/SnapshootPortfolio1.png',
+    name: 'Tonic',
+    detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    github: 'https://github.com/roshan-bajgain',
+    liveDemoLink: 'https://roshan-bajgain.github.io/',
+    imgUrl: 'Image/SnapshootPortfolio1.png',
   },
   {
-    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://github.com/roshan-bajgain', liveDemoLink: 'https://roshan-bajgain.github.io/', imgUrl: 'SnapshootPortfolio2.png',
+    name: 'Multi Project',
+    detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    github: 'https://github.com/roshan-bajgain',
+    liveDemoLink: 'https://roshan-bajgain.github.io/',
+    imgUrl: 'SnapshootPortfolio2.png',
   },
   {
-    name: 'Tonic', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://github.com/roshan-bajgain', liveDemoLink: 'https://roshan-bajgain.github.io/', imgUrl: 'SnapshootPortfolio3.png',
+    name: 'Tonic',
+    detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    github: 'https://github.com/roshan-bajgain',
+    liveDemoLink: 'https://roshan-bajgain.github.io/',
+    imgUrl: 'SnapshootPortfolio3.png',
   },
   {
-    name: 'Multi Project', detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', github: 'https://github.com/roshan-bajgain', liveDemoLink: 'https://roshan-bajgain.github.io/', imgUrl: 'SnapshootPortfolio4.png',
+    name: 'Multi Project 4',
+    detailDescription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates, quaerat in, deserunt cumque odio alias expedita quasi distinctio minima saepe optio, doloribus nisi. Numquam ratione vitae quas sed asperiores dicta voluptatum maiores praesentium ab ad, animi commodi ea. Sit?',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    github: 'https://github.com/roshan-bajgain',
+    liveDemoLink: 'https://roshan-bajgain.github.io/',
+    imgUrl: 'SnapshootPortfolio4.png',
   },
 ];
-
-  const btn = document.querySelectorAll('.project-btn').forEach(function(item) {
-  item.addEventListener('click', function() {
-      console.log(item.dataset);
-      const project_id = 0;
-      workPopUpCard.classList.add('open');
-    });
-  });
 
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
@@ -64,17 +76,27 @@ const popUpProject = (popUpdata) => {
                  </ul>
              </div>
              <div id="work-buttons">
-             <div class="work-button"><a class="project-button" href=${popUpdata.liveDemoLink}>See Live <img
+             <div class="work-button1"><a class="project-button" href=${popUpdata.liveDemoLink}>See Live <img
                  src="live1.png" alt="live" id="live"></a>
              </div>
-             <div class="work-button"><a class="project-button" href=${popUpdata.github}>See Source <img src="github.png" alt="github" id="pop-github"></a></div>
+             <div class="work-button1"><a class="project-button" href=${popUpdata.github}>See Source <img src="github.png" alt="github" id="pop-github"></a></div>
          </div>
      </div>
  </div>
 </div>
 </div>`;
-workPopUpCard.innerHTML = popUpItem;
+  workPopUpCard.innerHTML = popUpItem;
 };
+
+document.querySelectorAll('.project-btn').forEach((item) => {
+  item.addEventListener('click', () => {
+    const { projectId } = item.dataset;
+    popUpProject(myprojects[projectId]);
+    workPopUpCard.classList.add('open');
+  });
+});
+
 const popupClose = () => {
   workPopUpCard.classList.remove('open');
+  workPopUpCard.innerHTML = '';
 };
