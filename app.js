@@ -11,7 +11,7 @@ closebtn.addEventListener('click', () => {
 });
 navs.forEach((a) => {
   a.addEventListener('click', () => {
-    links.classList.remove('show-links');
+    links.classList.remove('.show-links');
   });
 });
 const myprojects = [
@@ -57,7 +57,7 @@ const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
      <img src="x.svg" alt="close" id="popUp-Close">
-     <h2 class="card-title">${popUpdata.name}</h2>
+     <h2 class="card-title">{popUpdata.name}</h2>
          <div class="work-detail-box">
              <ul>
                  <li class=" work-detail canopy">CANOPY </li>
