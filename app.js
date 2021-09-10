@@ -52,7 +52,7 @@ const myprojects = [
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
-     <img src="x.svg" alt="close" id="popUp-Close" onclick="popupClose();">
+     <img src="x.svg" alt="close" id="popUp-Close">
      <h2 class="card-title">${popUpdata.name}</h2>
          <div class="work-detail-box">
              <ul>
@@ -96,7 +96,9 @@ document.querySelectorAll('.project-btn').forEach((item) => {
   });
 });
 
-const popupClose = () => {
-  workPopUpCard.classList.remove('open');
-  workPopUpCard.innerHTML = '';
-};
+document.addEventListener('click', (event) => {
+  if (event.target.id === 'popUp-Close') {
+    workPopUpCard.classList.remove('open');
+    workPopUpCard.innerHTML = '';
+  }
+});
