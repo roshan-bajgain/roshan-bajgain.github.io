@@ -87,7 +87,6 @@ const popUpProject = (popUpdata) => {
  </div>
 </div>
 </div>`;
-  workPopUpCard.innerHTML = popUpItem;
 };
 
 const myprojectWork = (data, index) => {
@@ -118,14 +117,6 @@ const myprojectWork = (data, index) => {
 const worksection = document.getElementById('work-section');
 myprojects.forEach((project, index) => {
   worksection.innerHTML += myprojectWork(project, index);
-});
-
-document.querySelectorAll('.project-btn').forEach((item) => {
-  item.addEventListener('click', () => {
-    const { projectId } = item.dataset;
-    popUpProject(myprojects[projectId]);
-    workPopUpCard.classList.add('open');
-  });
 });
 
 document.addEventListener('click', (event) => {
