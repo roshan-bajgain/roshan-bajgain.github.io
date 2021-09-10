@@ -42,11 +42,122 @@ body {
   backdrop-filter: blur(3px);
 }
 
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  font-size: 33px;
+}
+
+#work-popup-section {
+  background: #c1c7d0;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: fixed;
+  padding: 1px 29px;
+  z-index: 100;
+  width: 100%;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.open {
+  display: block;
+}
+
+#popUp-card {
+  padding: 12px 24px;
+}
+
+#popUp-view {
+  width: 100%;
+  position: relative;
+  background: white;
+  margin-top: 35px;
+  padding: 23px;
+  border-radius: 20px;
+}
+
+#popUp-Close {
+  position: absolute;
+  top: 22px;
+  right: 8px;
+  margin: 8px;
+}
+
+.card-title {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.work-snapshot {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.work-description {
+  margin-top: 8px;
+  text-align: justify;
+}
+
 .close-btn {
   float: right;
   padding: 13px;
   color: white;
   filter: invert(1);
+}
+
+.work-detail-box ul {
+  display: flex;
+  justify-items: flex-start;
+  list-style: none;
+  margin-top: 10px;
+}
+
+li.work-detail {
+  padding-right: 20px;
+}
+
+#pop-github {
+  width: 15px;
+  background: #6070ff;
+}
+
+.work-button1 {
+  border: 1px solid #396df2;
+  padding: 9px 23px;
+  border-radius: 9px;
+  margin-top: 39px;
+  margin-right: 21px;
+}
+
+#live {
+  width: 15px;
+  background: #6070ff;
+}
+
+#work-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.capony {
+  color: #344563;
+  font-size: 13px;
 }
 
 .nav1 {
@@ -98,7 +209,6 @@ h2 {
   font-size: 18px;
   color: #7f8cff;
   margin-top: 19px;
-  margin-left: 17px;
 }
 
 .social-icons {
@@ -477,6 +587,10 @@ h5 {
     padding: 10px 25px;
   }
 
+  .work {
+    display: flex;
+  }
+
   .works {
     display: flex;
     padding-right: 10px;
@@ -484,6 +598,11 @@ h5 {
 
   .snapshoot-portfolia {
     width: 90%;
+  }
+
+  .work-description {
+    padding-right: 30px;
+    flex: 2;
   }
 
   .works-container {
