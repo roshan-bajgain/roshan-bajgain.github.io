@@ -22,6 +22,7 @@ const myprojects = [
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
     imgUrl: 'Image/SnapshootPortfolio1.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     name: 'Multi Project',
@@ -30,6 +31,7 @@ const myprojects = [
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
     imgUrl: 'SnapshootPortfolio2.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     name: 'Tonic',
@@ -38,6 +40,7 @@ const myprojects = [
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
     imgUrl: 'SnapshootPortfolio3.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     name: 'Multi Project 4',
@@ -46,6 +49,7 @@ const myprojects = [
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
     imgUrl: 'SnapshootPortfolio4.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -70,9 +74,7 @@ const popUpProject = (popUpdata) => {
          <div>
              <div class="work-detail-box">
                  <ul>
-                     <li class="chips btn1">html</li>
-                     <li class="chips btn1">css</li>
-                     <li class="chips btn1">javascript</li>
+                    ${popUpdata.technologies.map((item) => `<li class="btn1">${item}</li>`).join('')}
                  </ul>
              </div>
              <div id="work-buttons">
@@ -87,6 +89,36 @@ const popUpProject = (popUpdata) => {
 </div>`;
   workPopUpCard.innerHTML = popUpItem;
 };
+
+const myprojectWork = (data, index) => {
+  const reverse = index % 2 === 1;
+  return `
+  <section class="works ${reverse ? 'works-reverse' : ''}">
+    <div class="snapp">
+      <img class="snapshoot-portfolia" src=${data.imgUrl} alt="portfolio-snapshoot ${index}">
+    </div>
+    <div class="content2">  
+      <h3 class="heading">${data.name}</h3>
+      <div class="details">
+        <h5>CANOPY</h5>
+        <img class="dot" src="Counter.png" alt="counter-sign">
+        <p class="det">Back End Dev</p>
+        <img class="dot" src="Counter.png" alt="counter-sign">
+        <p class="det">2015</p>
+      </div>
+      <p class="content">${data.description}</p>
+        <ul class="btn">
+            ${data.technologies.map((item) => `<li class="btn1">${item}</li>`).join('')}
+        </ul>
+      <button class="btn2 project-btn" id="project-${index}" data-project-id="${index}" type="button">See Project</button>
+    </div>
+  </section>`;
+};
+
+const worksection = document.getElementById('work-section');
+myprojects.forEach((project, index) => {
+  worksection.innerHTML += myprojectWork(project, index);
+});
 
 document.querySelectorAll('.project-btn').forEach((item) => {
   item.addEventListener('click', () => {
