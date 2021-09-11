@@ -6,8 +6,6 @@ const navs = document.querySelectorAll('.information');
 const subscribeForm = document.getElementById('subscribe');
 const formErrorMessage = document.getElementById('error-message');
 const formEmail = document.getElementById('email');
-const formName = document.getElementById('name');
-const formMsg = document.getElementById('msg');
 
 navToggle.addEventListener('click', () => {
   links.classList.toggle('show-links');
@@ -77,22 +75,6 @@ subscribeForm.addEventListener('submit', (e) => {
   e.preventDefault();
   checkFormInput();
 });
-
-const checkLocalFormData = () => {
-  let localFormData = localStorage.getItem('formData');
-  localFormData = JSON.parse(localFormData);
-  if (localFormData != null) {
-    if (localFormData.name != null) {
-      formName.value = localFormData.name;
-    }
-    if (localFormData.name != null) {
-      formEmail.value = localFormData.email;
-    }
-    if (localFormData.name != null) {
-      formMsg.value = localFormData.msg;
-    }
-  }
-};
 
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
