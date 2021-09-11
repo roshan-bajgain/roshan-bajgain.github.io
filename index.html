@@ -125,12 +125,16 @@
         <h1 class="contact-heading">Contact me</h1>
         <p class="contact-para">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
         <div class="form">
-          <form action="https://formspree.io/f/mbjqpebd" method="POST">
+          <form action="https://formspree.io/f/mbjqpebd" method="POST"  class="contact-form" id="subscribe">
+            <label for="input-name">.</label>
             <input type="text" class="fomm" id="name" name="User-name" placeholder="Your Name" minlength="1" maxlength="30" required><br>
+            <label for="input-email">.</label>
             <input type="email" class="fomm" id="email" name="email-address" placeholder="Example@gmail.com" required><br>
+            <label for="input-msg">.</label>
             <textarea class="text" id="msg" name="user-message" placeholder="Write your message here" maxlength="500" required></textarea> 
             <div class="div-button">
               <button class="btnn" type="submit"> Get It Touch</button>
+              <small id="error-message"></small>
             </div>
           </form>
         <div class="shape"></div>
