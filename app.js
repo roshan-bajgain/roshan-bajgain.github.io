@@ -34,7 +34,7 @@ const myprojects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
-    imgUrl: 'SnapshootPortfolio2.png',
+    imgUrl: 'Image/SnapshootPortfolio2.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -43,7 +43,7 @@ const myprojects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
-    imgUrl: 'SnapshootPortfolio3.png',
+    imgUrl: 'Image/SnapshootPortfolio3.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -52,7 +52,7 @@ const myprojects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     github: 'https://github.com/roshan-bajgain',
     liveDemoLink: 'https://roshan-bajgain.github.io/',
-    imgUrl: 'SnapshootPortfolio4.png',
+    imgUrl: 'Image/SnapshootPortfolio4.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
@@ -79,7 +79,7 @@ subscribeForm.addEventListener('submit', (e) => {
 const popUpProject = (popUpdata) => {
   const popUpItem = `<div id="popUp-view">
      <div class="popUp-card">
-     <img src="x.svg" alt="close" id="popUp-Close">
+     <img src="Image/x.svg" alt="close" id="popUp-Close">
      <h2 class="card-title">${popUpdata.name}</h2>
          <div class="work-detail-box">
              <ul>
@@ -102,9 +102,9 @@ const popUpProject = (popUpdata) => {
              </div>
              <div id="work-buttons">
              <div class="work-button1"><a class="project-button" href=${popUpdata.liveDemoLink}>See Live <img
-                 src="live1.png" alt="live" id="live"></a>
+                 src="Image/live1.png" alt="live" id="live"></a>
              </div>
-             <div class="work-button1"><a class="project-button" href=${popUpdata.github}>See Source <img src="github.png" alt="github" id="pop-github"></a></div>
+             <div class="work-button1"><a class="project-button" href=${popUpdata.github}>See Source <img src="Image/github.png" alt="github" id="pop-github"></a></div>
          </div>
      </div>
  </div>
@@ -124,9 +124,9 @@ const myprojectWork = (data, index) => {
       <h3 class="heading">${data.name}</h3>
       <div class="details">
         <h5>CANOPY</h5>
-        <img class="dot" src="Counter.png" alt="counter-sign">
+        <img class="dot" src="Image/Counter.png" alt="counter-sign">
         <p class="det">Back End Dev</p>
-        <img class="dot" src="Counter.png" alt="counter-sign">
+        <img class="dot" src="Image/Counter.png" alt="counter-sign">
         <p class="det">2015</p>
       </div>
       <p class="content">${data.description}</p>

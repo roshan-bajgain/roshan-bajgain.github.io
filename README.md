@@ -3,9 +3,9 @@
 
 # My-portfolio
 
-![screenshot](./ros-image/screenshot.png)
-![screenshot](./ros-image/about.png)
-![screenshot](./ros-image/contact.png)
+![screenshot](./Image/screenshot.png)
+![screenshot](./Image/about.png)
+![screenshot](./Image/contact.png)
 
 ## Built With
 
